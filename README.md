@@ -54,7 +54,7 @@ The code snippets and question titles for single-code answer posts are also prov
 ## Run the code
 - Requirements: Tensorflow
 - Raw Stack Overflow (SO) dump can be found: https://archive.org/details/stackexchange. We use SO dump collected from 07/31/2008 to 06/12/2016 in experiments.
-For running our model BiV-HNN directly on the processed data, please see [**Run BiV-HNN**](###Run-BiV-HNN).
+For running our model BiV-HNN directly on the processed data, please see [**Run BiV-HNN**](#Run-BiV-HNN).
 
 ### Raw data processing
 For processing raw data, please run TBA.sh.
