@@ -66,9 +66,14 @@ For running our model BiV-HNN directly on the processed data, please see [**Run 
 ### Data processing
 
 ### Run BiV-HNN
-We provide processed training/validation/testing files in our experiments. Before running, please unzip the word embedding files (code_word_embedding.z01/z02/zip) under this [folder](data/data_hnn/python/train/). 
+We provide processed training/validation/testing files in our experiments. Before running, please unzip the word embedding files for Python (code_word_embedding.gz*) following:<br>
+`cd data/data_hnn/python/train/`<br>
+`cat code_word_embedding.gza* | zcat > rnn_partialcontext_word_embedding_code_150.pickle`<br>
+`rm code_word_embedding.gza*`<br>
+then go back the code dir:<br>
+`cd ../../../../BiV_HNN/`.
 
-`cd BiV_HNN`
+No other operations demanded for SQL data.
 
 **Train**:
 - For Python data:<br>
