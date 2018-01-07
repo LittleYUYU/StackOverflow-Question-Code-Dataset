@@ -38,12 +38,15 @@ TBA
   </tr>
 </table>
 
-### Multi-code answer posts
-The question-code pairs mined or manually annotated from multi-code answer posts can be found: [python](final_collection/python_multi_code_iids.txt) and [SQL](final_collection/sql_multi_code_iids.txt). Each line in the file corresponds to one code snippet, which can be paired with its question.
+### Multi-code answer posts & manual annotations
+The question-code pairs mined or manually annotated from multi-code answer posts can be found: [Python](final_collection/python_multi_code_iids.txt) and [SQL](final_collection/sql_multi_code_iids.txt). Each line in the file corresponds to one code snippet, which can be paired with its question.
 <br> **Format**: Each code snippet is identified by `(question id, code snippet index)`, where the `code snippet index` refers to the index (starting from 0) of the code snippet in the accepted answer post of this question. For example, `(5996881, 0)` refers to the first code snippet in the accepted answer post of the [question](https://stackoverflow.com/a/5996949) with id "5996881", which can be paired with its question "How to limit a number to be within a specified range? (Python)".
 <br> **Source data**: [Python Pickle](https://docs.python.org/2/library/pickle.html) files. Please open with `pickle.load(open(filename))`.
 - Code snippets for [Python](annotation_tool/data/code_solution_labeled_data/source/python_how_to_do_it_by_classifier_multiple_iid_to_code.pickle) and [SQL](annotation_tool/data/code_solution_labeled_data/source/sql_how_to_do_it_by_classifier_multiple_iid_to_code.pickle): A dict of {(question id, code index): code snippet}.
 - Question titles for [Python](annotation_tool/data/code_solution_labeled_data/source/python_how_to_do_it_by_classifier_multiple_qid_to_title.pickle) and [SQL](annotation_tool/data/code_solution_labeled_data/source/sql_how_to_do_it_by_classifier_multiple_qid_to_title.pickle): A dict of {question id: question title}.
+
+#### Manual annotations
+Human annotations can be found: [Python](annotation_tool/crowd_sourcing/python_annotator/all_agreed_iid_to_label.pickle) and [SQL](annotation_tool/crowd_sourcing/sql_annotator/all_agreed_iid_to_label.pickle). Both are pickle files.
 
 ### Single-code answer posts
 The code snippets and question titles for single-code answer posts are also provided:
@@ -57,7 +60,6 @@ The code snippets and question titles for single-code answer posts are also prov
 For running our model BiV-HNN directly on the processed data, please see [**Run BiV-HNN**](#run-biv-hnn).
 
 ### Raw data processing
-For processing raw data, please run TBA.sh.
 
 ### How-to-do-it question type classifier
 
