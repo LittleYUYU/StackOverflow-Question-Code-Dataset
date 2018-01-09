@@ -81,21 +81,22 @@ then go back the code dir:<br>
 
    No other operations demanded for SQL data.
 
-2. Train:
-- For Python data:<br>
-`python run.py --train --train_setting=1 --text_model=1 --code_model=1 --query_model=1 --text_model_setting="64-150-24379-0-1-0-1" --code_model_setting="64-150-218900-0-1-0-1" --query_model_setting="64-150-24379-0-1-0-1" --keep_prob=0.5`
-- For SQL data:<br>
-`python run.py --train --train_setting=2 --text_model=1 --code_model=1 --query_model=1 --text_model_setting="64-150-13698-0-1-0-1" --code_model_setting="64-150-33192-0-1-0-1" --query_model_setting="64-150-13698-0-1-0-1" --keep_prob=0.7`
+2. Train:<br>
+   For Python data:<br>
+   `python run.py --train --train_setting=1 --text_model=1 --code_model=1 --query_model=1 --text_model_setting="64-150-24379-0-1-0-1" --code_model_setting="64-150-218900-0-1-0-1" --query_model_setting="64-150-24379-0-1-0-1" --keep_prob=0.5`<br>
+  
+   For SQL data:<br>
+   `python run.py --train --train_setting=2 --text_model=1 --code_model=1 --query_model=1 --text_model_setting="64-150-13698-0-1-0-1" --code_model_setting="64-150-33192-0-1-0-1" --query_model_setting="64-150-13698-0-1-0-1" --keep_prob=0.7`
 
-The above program trains the `BiV-HNN` model. It will print the model's learning process on the training set, and its performance on the validation set and the testing set. 
+   The above program trains the `BiV-HNN` model. It will print the model's learning process on the training set, and its performance on the validation set and the testing set. 
 
-For training `Text-HNN`, set:<br>
-`--code_model=0 --query_model=0 --code_model_setting=None --query_model_setting=None`<br>
-to dismiss the code and query modeling.
+   For training `Text-HNN`, set:<br>
+   `--code_model=0 --query_model=0 --code_model_setting=None --query_model_setting=None`<br>
+   to dismiss the code and query modeling.
 
-For training `Code-HNN`, set:<br>
-`--text_model=0 --text_model_setting=None`<br>
-to dismiss the text modeling.
+   For training `Code-HNN`, set:<br>
+   `--text_model=0 --text_model_setting=None`<br>
+   to dismiss the text modeling.
 
 3. Test:<br>
 You may revise the `test` function in `run.py` for testing other datasets, and run the above command (Note: replace `--train` with `--test`). 
