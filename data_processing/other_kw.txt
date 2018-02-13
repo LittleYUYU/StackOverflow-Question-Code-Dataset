@@ -1,0 +1,111 @@
+looking for	looking forward	looking at	looking around	searching for	searching forward	searching at	searching around
+tutorial	tutorials
+manual	manuals
+book	books
+tool	tools
+concept	conceptual
+explain
+explanation
+explanatory
+clarify
+clarification
+explicate
+elucidate
+illuminate
+expound
+practice	practices
+best practice	best practices
+difference between	differences between
+package	packages
+client	clients
+plugin	plugins
+plug-in
+app
+application	applications
+lib	libs
+library	libraryies
+framework	frameworks
+ide	ides
+article	articles
+system	systems
+software
+repository	repositoryies
+platform	platforms
+video	videos
+resource	resources
+technique	techniques
+editor	editors
+blog	blogs
+debugger	debuggers
+interpreter	interpreters
+compiler	compilers
+profiler	profilers
+generator	generators
+guide	guides
+guidance
+guideline	guidelines
+orientation	orientations
+direction	directions
+recommend	recommendation
+suggest
+suggestion	suggestions
+advice	advices
+opinion	opinions
+hint	hints
+point	pointers
+alternative	alternatives
+choice	choices
+idea	ideas
+thought	thoughts
+option	options
+clue	clues
+experience	experiences
+experienced
+search	searching
+research	researching
+google	googleing
+look	looked
+seek	seeking
+scan	scaning
+learning
+getting
+migrate	migrateing
+migration	migrations
+upgrade	upgradeing
+convert	converting
+conversion
+porting
+freeware
+strategy
+started
+tips
+tricks
+caveats
+insight	insights
+light
+share
+provide
+find
+material
+available
+beginner
+possibilities
+mean	meaning
+significance
+signification
+possible
+level
+metrics
+statistics
+reason	reasons
+motive	motives
+cause	causes
+justification	justifications
+potential
+distinction	distinctions
+consensus
+lesson	lessons
+understand
+purpose	purposes
+how much
+how many
