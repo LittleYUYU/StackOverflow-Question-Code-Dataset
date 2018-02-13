@@ -59,15 +59,22 @@ A *Single-code answer post* is an (accepted) answer post that contains only one 
 
 ### 2.1 Prerequisite
 - Python 2.7
-- Tensorflow (1.0.1 or later)
-- [Raw Stack Overflow (SO) dump](https://archive.org/details/stackexchange) or [our processed data](data/data_hnn).
+- [NLTK](http://www.nltk.org/) 
+- [Tensorflow (1.0.1 or later)](https://www.tensorflow.org/)
+- [Raw Stack Overflow (SO) dump](https://archive.org/details/stackexchange) or [our processed data](data/data_hnn)
 
 ### 2.2 Manual annotations
 Human annotations can be found: [Python](annotation_tool/crowd_sourcing/python_annotator/all_agreed_iid_to_label.pickle) and [SQL](annotation_tool/crowd_sourcing/sql_annotator/all_agreed_iid_to_label.pickle). Both are pickle files.
 
 ### 2.3 How-to-do-it question type classifier
 
-### 2.4 Data processing
+### 2.4 Code snippet processing
+The script for processing code snippets can be found [here](data_processing/code_processing.py#L311).
+1. Installing package
+`cd data_processing/codenn/src/sqlparse/` `python setup.py install`<br>
+2. Processing code snippets (tokenization, normalizing variable name, etc.)<br>
+`cd data_processing`<br>
+The `tokenize_code_corpus` function receives a dictionary of code snippets and returns the paring results. Please run `python code_processing.py` for testing.
 
 ### 2.5 Run BiV-HNN
 We provide processed training/validation/testing files in our experiments [here](data/data_hnn/). 
