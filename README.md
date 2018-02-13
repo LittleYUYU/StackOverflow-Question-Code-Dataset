@@ -69,7 +69,7 @@ Human annotations can be found: [Python](annotation_tool/crowd_sourcing/python_a
 ### 2.3 How-to-do-it question type classifier
 
 ### 2.4 Code snippet processing
-The script for processing code snippets can be found [here](data_processing/code_processing.py#L311).
+The script for processing code snippets can be found [here](data_processing/code_processing.py#L311). The implementation of SQL parsing is adapted from https://github.com/sriniiyer/codenn.
 1. Installing package
 `cd data_processing/codenn/src/sqlparse/` `python setup.py install`<br>
 2. Processing code snippets (tokenization, normalizing variable name, etc.)<br>
