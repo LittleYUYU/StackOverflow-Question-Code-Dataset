@@ -108,6 +108,6 @@ You may revise the `test` function in `run.py` for testing other datasets, and r
 ## 3. Cite
 If you use the dataset or the code in your research, please cite the following paper:
 > StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow<br>
-> Ziyu Yao, Daniel Weld, Wei-Peng Chen, Huan Sun
+> Ziyu Yao, Daniel S. Weld, Wei-Peng Chen, Huan Sun
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
