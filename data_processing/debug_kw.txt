@@ -1,0 +1,36 @@
+how .* fix
+not working
+does not work	doesn't work	doesnt work
+did not work	didn't work	didnt work
+does not seem to work	doesn't seem to work	doesnt seem to work
+nothing works	nothing happens
+no effect	no effects
+fix
+bug	bugs
+error	errors
+.*error
+exception	exceptions
+wrong
+incorrect
+problem	problems
+issue	issues
+mistake	mistakes
+missing
+trouble	troubles
+debug	debugging
+fault
+fail	failed
+unexpected
+warning
+notice
+notification
+denied
+breakpoint
+unhandled
+tracker	trackers
+permission	permissions
+weird
+strange
+crash	crashes	crashed
+struggle	struggling
+does not	doesn't	doesnt
