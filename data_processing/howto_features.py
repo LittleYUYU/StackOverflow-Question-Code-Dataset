@@ -109,8 +109,10 @@ def featuring(instance, code_type):
     instance: {title, text_code_blocks, question_post_text_code_blocks} in dict format,
       where the text_code_blocks is a list of text and code blocks (in string) extracted from the answer post,
       and the question_post_text_code_blocks is a list of text and code blocks (in string) extracted from the question post.
+    code_type: either python or sql.
   Returns:
     feature: a dict of {feature: value}. """
+  assert code_type in {"python", "sql"}
 
   feature = dict()
 
