@@ -3,7 +3,7 @@
 ## 1. StaQC dataset
 
 ### 1.1 Introduction
-StaQC (**Sta**ck Overflow **Q**uestion-**C**ode pairs) contains around **148K** Python and **120K** SQL domain question-code pairs, which are automatically mined from [Stack Overflow](https://stackoverflow.com/) using a Bi-View Hierarchical Neural Network, as described in the paper "[StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow](http://web.cse.ohio-state.edu/~sun.397/Publications.htm)" (WWW'18).
+StaQC (**Sta**ck Overflow **Q**uestion-**C**ode pairs) is the largest dataset to date of around **148K** Python and **120K** SQL domain question-code pairs, which are automatically mined from [Stack Overflow](https://stackoverflow.com/) using a Bi-View Hierarchical Neural Network, as described in the paper "[StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow](http://web.cse.ohio-state.edu/~sun.397/docs/StaQC-www18.pdf)" (WWW'18).
 
 StaQC is collected from three sources: multi-code answer posts, single-code answer posts, and manual annotations on multi-code answer posts:
 <table>
@@ -39,7 +39,7 @@ StaQC is collected from three sources: multi-code answer posts, single-code answ
 </table>
 
 ### 1.2 Multi-code answer posts & manual annotations
-A *Multi-code answer post* is an (accepted) answer post that contains multiple code snippets, some of which may not be a *standalone* code solution to the question (see Section 1 in [paper](http://web.cse.ohio-state.edu/~sun.397/Publications.htm)). For example, in [this multi-code answer post](https://stackoverflow.com/a/5996949), the third code snippet is not a code solution to the question "How to limit a number to be within a specified range? (Python)".
+A *Multi-code answer post* is an (accepted) answer post that contains multiple code snippets, some of which may not be a *standalone* code solution to the question (see Section 1 in [paper](http://web.cse.ohio-state.edu/~sun.397/docs/StaQC-www18.pdf)). For example, in [this multi-code answer post](https://stackoverflow.com/a/5996949), the third code snippet is not a code solution to the question "How to limit a number to be within a specified range? (Python)".
 
 The question-code pairs automatically mined or manually annotated from multi-code answer posts can be found here: [Python](final_collection/python_multi_code_iids.txt) and [SQL](final_collection/sql_multi_code_iids.txt). 
 <br> **Format**: Each line corresponds to one code snippet, which can be paired with its question. The code snippet is identified by `(question id, code snippet index)`, where the `code snippet index` refers to the index (starting from 0) of the code snippet in the accepted answer post of this question. For example, `(5996881, 0)` refers to the first code snippet in the accepted answer post of the [question](https://stackoverflow.com/a/5996949) with id "5996881", which can be paired with its question "How to limit a number to be within a specified range? (Python)".
