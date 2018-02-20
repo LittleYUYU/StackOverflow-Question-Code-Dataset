@@ -1,5 +1,4 @@
 # HNN.py
-"""Implementing the Hierarchcal Attention Network for code answer inference."""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -9,8 +8,6 @@ import math
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
-
-import pdb
 
 def symmetric_variable_summaries(var, metrics=None):
   """
