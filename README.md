@@ -5,6 +5,8 @@
 ### 1.1 Introduction
 StaQC (**Sta**ck Overflow **Q**uestion-**C**ode pairs) is the largest dataset to date of around **148K** Python and **120K** SQL domain question-code pairs, which are automatically mined from [Stack Overflow](https://stackoverflow.com/) using a Bi-View Hierarchical Neural Network, as described in the paper "[StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow](http://web.cse.ohio-state.edu/~sun.397/docs/StaQC-www18.pdf)" (WWW'18).
 
+### [**Click to see some quick examples randomly sampled from StaQC!**](http://web.cse.ohio-state.edu/~yao.470/paper/StaQC_examples.html)
+
 StaQC is collected from three sources: multi-code answer posts, single-code answer posts, and manual annotations on multi-code answer posts:
 <table>
   <tr>
