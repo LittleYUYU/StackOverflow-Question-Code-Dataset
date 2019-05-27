@@ -65,6 +65,10 @@ A *Single-code answer post* is an (accepted) answer post that contains only one 
 - [Tensorflow (1.0.1 or later)](https://www.tensorflow.org/)
 - [Raw Stack Overflow (SO) dump](https://archive.org/details/stackexchange) or [our processed data](data/data_hnn)
 
+\[Update 05/27/2019\] If you are using our processed data, vocabularies (pickle files) can be found in:
+- Python: [text vocab](annotation_tool/data/code_solution_labeled_data/source/python_text_content/text_word_vocab.pickle), [code vocab](annotation_tool/data/code_solution_labeled_data/source/python_code_gram5/code_token_vocab.pickle). 
+- SQL: [text vocab](annotation_tool/data/code_solution_labeled_data/source/sql_text_content/text_word_vocab.pickle), [code vocab](annotation_tool/data/code_solution_labeled_data/source/sql_code_gram5/code_token_vocab.pickle).
+
 ### 2.2 Manual annotations
 Human annotations can be found: [Python](annotation_tool/crowd_sourcing/python_annotator/all_agreed_iid_to_label.pickle) and [SQL](annotation_tool/crowd_sourcing/sql_annotator/all_agreed_iid_to_label.pickle). Both are pickle files.
 
@@ -117,7 +121,16 @@ You may revise the `test` function in `run.py` for testing other datasets, and r
 
 ## 3. Cite
 If you use the dataset or the code in your research, please cite the following paper:
-> StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow<br>
-> Ziyu Yao, Daniel S. Weld, Wei-Peng Chen, Huan Sun
+
+```
+@inproceedings{yao2018staqc,
+  title={StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow},
+  author={Yao, Ziyu and Weld, Daniel S and Chen, Wei-Peng and Sun, Huan},
+  booktitle={Proceedings of the 2018 World Wide Web Conference on World Wide Web},
+  pages={1693--1703},
+  year={2018},
+  organization={International World Wide Web Conferences Steering Committee}
+}
+```
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
