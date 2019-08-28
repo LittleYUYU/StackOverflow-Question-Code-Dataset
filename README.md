@@ -1,4 +1,5 @@
 # StaQC: A Systematically Mined Question-Code Dataset from Stack Overflow
+(Check out other code resources in our group at: https://github.com/sunlab-osu)
 
 ## 1. StaQC dataset
 
