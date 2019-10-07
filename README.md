@@ -48,14 +48,14 @@ A *Multi-code answer post* is an (accepted) answer post that contains multiple c
 <br> **Format**: Each line corresponds to one code snippet, which can be paired with its question. The code snippet is identified by `(question id, code snippet index)`, where the `code snippet index` refers to the index (starting from 0) of the code snippet in the accepted answer post of this question. For example, `(5996881, 0)` refers to the first code snippet in the accepted answer post of the [question](https://stackoverflow.com/a/5996949) with id "5996881", which can be paired with its question "How to limit a number to be within a specified range? (Python)".
 
 We also provide the **complete** source data. Note that the source data contains all available resources **(not only the mined question-code pairs)**. Given the source data, you can retreive the mined code solutions using the provided question-code ids (see above).
-<br> **Source data**: [Python Pickle](https://docs.python.org/2/library/pickle.html) files. Please open with `pickle.load(open(filename))`.
+<br> **Source data**: [Python 2.7 Pickle](https://docs.python.org/2/library/pickle.html) files. Please open with `pickle.load(open(filename))`.
 - Code snippets for [Python](annotation_tool/data/code_solution_labeled_data/source/python_how_to_do_it_by_classifier_multiple_iid_to_code.pickle) and [SQL](annotation_tool/data/code_solution_labeled_data/source/sql_how_to_do_it_by_classifier_multiple_iid_to_code.pickle): A dict of {(question id, code index): code snippet}.
 - Question titles for [Python](annotation_tool/data/code_solution_labeled_data/source/python_how_to_do_it_by_classifier_multiple_qid_to_title.pickle) and [SQL](annotation_tool/data/code_solution_labeled_data/source/sql_how_to_do_it_by_classifier_multiple_qid_to_title.pickle): A dict of {question id: question title}.
 
 ### 1.3 Single-code answer posts
 A *Single-code answer post* is an (accepted) answer post that contains only one code snippet. We pair such code snippet with the question title as a question-code pair.
 
-**Source data**: [Python Pickle](https://docs.python.org/2/library/pickle.html) files. Please open with `pickle.load(open(filename))`.
+**Source data**: [Python 2.7 Pickle](https://docs.python.org/2/library/pickle.html) files. Please open with `pickle.load(open(filename))`.
 - Code snippets for [Python](annotation_tool/data/code_solution_labeled_data/source/python_how_to_do_it_qid_by_classifier_unlabeled_single_code_answer_qid_to_code.pickle) and for [SQL](annotation_tool/data/code_solution_labeled_data/source/sql_how_to_do_it_qid_by_classifier_unlabeled_single_code_answer_qid_to_code.pickle)): A dict of {question id: accepted code snippet}.
 - Question titles for [Python](annotation_tool/data/code_solution_labeled_data/source/python_how_to_do_it_qid_by_classifier_unlabeled_single_code_answer_qid_to_title.pickle) and [SQL](annotation_tool/data/code_solution_labeled_data/source/sql_how_to_do_it_qid_by_classifier_unlabeled_single_code_answer_qid_to_title.pickle): A dict of {question id: question title}.
 
